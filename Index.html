@@ -4,89 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BookHub | The Blog for Leaders</title>
-    
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    
-    <!-- Feather Icons -->
-    <script src="https://unpkg.com/feather-icons"></script>
-    
-    <style>
-        body {
-            font-family: 'Lato', sans-serif;
-            background-color: #F8F9FA;
-        }
-        .font-playfair {
-            font-family: 'Playfair Display', serif;
-        }
-        .hero-bg {
-            background-image: linear-gradient(rgba(21, 28, 38, 0.8), rgba(21, 28, 38, 0.8)), url('https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=2070&auto=format&fit=crop');
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body class="bg-gray-50">
 
     <!-- Header & Navigation -->
     <header class="bg-white shadow-sm sticky top-0 z-50">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <!-- Logo -->
             <div class="flex items-center space-x-2">
                 <div class="w-10 h-10 bg-[#3A4F6A] rounded-md flex items-center justify-center">
-                    <svg class="w-6 h-6 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                    <i class="fas fa-book-open text-yellow-400"></i>
                 </div>
                 <a href="#" class="text-xl font-bold text-gray-800">BookHub<span class="text-gray-600">Blog</span></a>
             </div>
             
-            <!-- Desktop Menu -->
             <div class="hidden md:flex items-center space-x-8">
-                <a href="#" class="text-gray-600 hover:text-[#C19A6B] font-semibold transition-colors">Home</a>
-                <a href="#" class="text-gray-600 hover:text-[#C19A6B] font-semibold transition-colors">Books</a>
-                <a href="#" class="text-gray-600 hover:text-[#C19A6B] font-semibold transition-colors">Authors</a>
-                <a href="#" class="text-gray-600 hover:text-[#C19A6B] font-semibold transition-colors">Topics</a>
-                <a href="#" class="text-gray-600 hover:text-[#C19A6B] font-semibold transition-colors">Reviews</a>
-                <a href="#" class="text-gray-600 hover:text-[#C19A6B] font-semibold transition-colors">Community</a>
+                <a href="index.html" class="text-gray-600 hover:text-[#C19A6B] font-semibold transition-colors">Home</a>
+                <a href="books.html" class="text-gray-600 hover:text-[#C19A6B] font-semibold transition-colors">Books</a>
+                <a href="contact.html" class="text-gray-600 hover:text-[#C19A6B] font-semibold transition-colors">Contact</a>
             </div>
             
-            <!-- Right Icons -->
             <div class="hidden md:flex items-center space-x-4">
                 <button class="text-gray-500 hover:text-[#C19A6B] transition-colors" aria-label="Search">
-                    <i data-feather="search" class="w-5 h-5"></i>
+                    <i class="fas fa-search"></i>
                 </button>
                 <button class="text-gray-500 hover:text-[#C19A6B] transition-colors" aria-label="User account">
-                    <i data-feather="user" class="w-5 h-5"></i>
+                    <i class="fas fa-user"></i>
                 </button>
             </div>
             
-            <!-- Mobile Menu Button -->
             <div class="md:hidden">
-                <button id="mobile-menu-button" class="text-gray-600 hover:text-[#C19A6B]" aria-label="Open menu">
-                    <i data-feather="menu" class="w-6 h-6"></i>
+                <button id="mobile-menu-btn" class="text-gray-600 hover:text-[#C19A6B]" aria-label="Open menu">
+                    <i class="fas fa-bars"></i>
                 </button>
             </div>
         </nav>
         
-        <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 space-y-2">
-            <a href="#" class="block text-gray-600 hover:text-[#C19A6B] font-semibold transition-colors">Home</a>
-            <a href="#" class="block text-gray-600 hover:text-[#C19A6B] font-semibold transition-colors">Books</a>
-            <a href="#" class="block text-gray-600 hover:text-[#C19A6B] font-semibold transition-colors">Authors</a>
-            <a href="#" class="block text-gray-600 hover:text-[#C19A6B] font-semibold transition-colors">Topics</a>
-            <a href="#" class="block text-gray-600 hover:text-[#C19A6B] font-semibold transition-colors">Reviews</a>
-            <a href="#" class="block text-gray-600 hover:text-[#C19A6B] font-semibold transition-colors">Community</a>
+             <a href="index.html" class="block text-gray-600 hover:text-[#C19A6B] font-semibold transition-colors">Home</a>
+             <a href="books.html" class="block text-gray-600 hover:text-[#C19A6B] font-semibold transition-colors">Books</a>
+             <a href="contact.html" class="block text-gray-600 hover:text-[#C19A6B] font-semibold transition-colors">Contact</a>
         </div>
     </header>
 
     <main>
-        <!-- Hero Section -->
-        <section class="hero-bg bg-cover bg-center text-white py-24 md:py-32">
+        <section class="bg-cover bg-center text-white py-24 md:py-32" style="background-image: linear-gradient(rgba(21, 28, 38, 0.8), rgba(21, 28, 38, 0.8)), url('https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=2070&auto=format&fit=crop');">
             <div class="container mx-auto px-6 text-center">
-                <h1 class="text-4xl md:text-6xl font-playfair font-bold leading-tight mb-4">
-                    Dive Deep. Lead <span class="text-[#E0B889]">Forward.</span>
+                <!-- THIS IS THE LINE I CHANGED -->
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">
+                    If You Can See This, The DEPLOY WORKED!
                 </h1>
                 <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
                     Inspiring Leaders, One Book at A Time.
@@ -97,86 +65,45 @@
             </div>
         </section>
 
-        <!-- Main Content -->
         <section class="container mx-auto px-6 py-16">
             <div class="flex flex-col lg:flex-row gap-12">
-                
-                <!-- Articles Section -->
                 <div class="w-full lg:w-2/3">
-                    <h2 class="text-3xl font-playfair font-bold text-gray-800 mb-8">Featured Articles</h2>
+                    <h2 class="text-3xl font-bold text-gray-800 mb-8">Featured Articles</h2>
                     <div class="grid md:grid-cols-2 gap-8">
-                        <!-- Article Card 1 -->
-                        <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 card-hover">
                             <img src="https://placehold.co/600x400/3A4F6A/E0B889?text=BookHub" alt="Article Image" class="w-full h-48 object-cover" loading="lazy">
                             <div class="p-6">
                                 <h3 class="font-bold text-xl mb-2 text-gray-800">The Innovator's Dilemma: A Summary</h3>
                                 <p class="text-gray-600 text-sm mb-4">
                                     Learn why great companies fail and how to avoid the same fate. An in-depth look into disruptive innovation.
                                 </p>
-                                <div class="flex items-center text-sm text-gray-500 mb-4">
-                                    <p>Nimrod Nove</p>
-                                    <span class="mx-2">&bull;</span>
-                                    <p>Psychology, Business</p>
-                                </div>
                                 <a href="#" class="font-semibold text-[#C19A6B] hover:underline">Read More &rarr;</a>
                             </div>
                         </div>
-
-                        <!-- Article Card 2 -->
-                        <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 card-hover">
                             <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?q=80&w=2128&auto=format&fit=crop" alt="A library shelf" class="w-full h-48 object-cover" loading="lazy">
                             <div class="p-6">
                                 <h3 class="font-bold text-xl mb-2 text-gray-800">Building a Reading Habit That Sticks</h3>
                                 <p class="text-gray-600 text-sm mb-4">
                                     Practical tips and strategies to help you read more consistently and get more out of every book.
                                 </p>
-                                <div class="flex items-center text-sm text-gray-500 mb-4">
-                                    <p>Jane Doe</p>
-                                    <span class="mx-2">&bull;</span>
-                                    <p>Productivity, Self-Help</p>
-                                </div>
-                                <a href="#" class="font-semibold text-[#C19A6B] hover:underline">Read More &rarr;</a>
-                            </div>
-                        </div>
-                        
-                        <!-- Article Card 3 -->
-                        <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
-                             <div class="absolute top-2 right-2 bg-yellow-400 text-gray-800 text-xs font-bold px-2 py-1 rounded">NEW</div>
-                            <img src="https://images.unsplash.com/photo-1592496431122-2349e0fbc666?q=80&w=2112&auto=format&fit=crop" alt="A book titled Burberry" class="w-full h-48 object-cover" loading="lazy">
-                            <div class="p-6">
-                                <h3 class="font-bold text-xl mb-2 text-gray-800">Leadership Lessons from 'The Damned': A Review</h3>
-                                <p class="text-gray-600 text-sm mb-4">
-                                    Exploring the timeless principles of leadership and strategy from classic literature.
-                                </p>
-                                <div class="flex items-center text-sm text-gray-500 mb-4">
-                                    <p>John Smith</p>
-                                    <span class="mx-2">&bull;</span>
-                                    <p>Leadership, Reviews</p>
-                                </div>
                                 <a href="#" class="font-semibold text-[#C19A6B] hover:underline">Read More &rarr;</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <!-- Sidebar -->
                 <aside class="w-full lg:w-1/3">
-                    <!-- Trending Topics -->
                     <div class="bg-white p-6 rounded-lg shadow-md mb-8">
                         <h3 class="font-bold text-xl text-gray-800 mb-4">Trending Topics</h3>
                         <ul class="space-y-3">
-                            <li><a href="#" class="flex items-center text-gray-600 hover:text-[#C19A6B] transition-colors"><i data-feather="hash" class="w-4 h-4 mr-2 text-gray-400"></i>#Event Us</a></li>
-                            <li><a href="#" class="flex items-center text-gray-600 hover:text-[#C19A6B] transition-colors"><i data-feather="hash" class="w-4 h-4 mr-2 text-gray-400"></i>SuccessMindset</a></li>
-                            <li><a href="#" class="flex items-center text-gray-600 hover:text-[#C19A6B] transition-colors"><i data-feather="hash" class="w-4 h-4 mr-2 text-gray-400"></i>Biography</a></li>
-                            <li><a href="#" class="flex items-center text-gray-600 hover:text-[#C19A6B] transition-colors"><i data-feather="hash" class="w-4 h-4 mr-2 text-gray-400"></i>Psychology</a></li>
-                            <li><a href="#" class="flex items-center text-gray-600 hover:text-[#C19A6B] transition-colors"><i data-feather="hash" class="w-4 h-4 mr-2 text-gray-400"></i>#genisisdate</a></li>
+                            <li><a href="#" class="flex items-center text-gray-600 hover:text-[#C19A6B] transition-colors"><i class="fas fa-hashtag w-4 h-4 mr-2 text-gray-400"></i>#Event Us</a></li>
+                            <li><a href="#" class="flex items-center text-gray-600 hover:text-[#C19A6B] transition-colors"><i class="fas fa-hashtag w-4 h-4 mr-2 text-gray-400"></i>SuccessMindset</a></li>
                         </ul>
                     </div>
                     
-                    <!-- Newsletter -->
                     <div class="bg-white p-6 rounded-lg shadow-md">
                         <h3 class="font-bold text-xl text-gray-800 mb-4">Stay Informed</h3>
-                        <p class="text-gray-600 text-sm mb-4">Subscribe to our newsletter for the latest articles and book reviews.</p>
                         <form>
                             <input type="email" placeholder="your@email.com" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#C19A6B]" required>
                             <button type="submit" class="w-full mt-3 bg-[#C19A6B] hover:bg-opacity-90 text-white font-bold py-2 px-4 rounded-md transition-colors">Subscribe</button>
@@ -188,35 +115,18 @@
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="bg-[#151C26] text-gray-400 pt-12">
         <div class="container mx-auto px-6">
             <div class="text-center mb-8">
                 <a href="#" class="text-2xl font-bold text-white">BookHub<span class="text-gray-400">Blog</span></a>
-                <p class="mt-2 text-sm">The Blog for Leaders</p>
-            </div>
-            <div class="flex justify-center mb-8 space-x-6">
-                <a href="#" class="hover:text-white">About</a>
-                <a href="#" class="hover:text-white">Contact</a>
-                <a href="#" class="hover:text-white">Privacy Policy</a>
-                <a href="#" class="hover:text-white">Terms of Service</a>
             </div>
             <div class="border-t border-gray-800 py-6 text-center text-sm">
                 <p>&copy; 2024 BookHub Blog. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
-
-    <script>
-        // Feather Icons initialization
-        feather.replace();
-
-        // Mobile menu toggle
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-    </script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
+
+
