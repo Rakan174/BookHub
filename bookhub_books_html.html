@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore curated book reviews and insights from BookHub Blog">
+    <title>Books - BookHub Blog</title>
+    
+    <link rel="icon" type="image/png" href="./images/logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100">
+    
+    <!-- Navigation -->
+    <nav class="bg-slate-900 text-white shadow-xl sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="index.html" class="flex items-center space-x-3">
+                    <img src="./images/logo.png" alt="BookHub Blog Logo" class="w-10 h-10 object-contain">
+                    <div>
+                        <div class="text-base font-bold">BookHub<span class="text-emerald-400">Blog</span></div>
+                    </div>
+                </a>
+
+                <div class="hidden md:flex items-center space-x-6 text-sm">
+                    <a href="index.html" class="hover:text-amber-400 transition-colors">Home</a>
+                    <a href="books.html" class="text-amber-400 font-medium">Books</a>
+                    <a href="#topics" class="hover:text-amber-400 transition-colors">Topics</a>
+                    <a href="#authors" class="hover:text-amber-400 transition-colors">Authors</a>
+                    <a href="#community" class="hover:text-amber-400 transition-colors">Community</a>
+                </div>
+
+                <div class="flex items-center space-x-3">
+                    <button class="p-2 hover:bg-slate-800 rounded-full transition-colors" aria-label="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="p-2 hover:bg-slate-800 rounded-full transition-colors" aria-label="User">
+                        <i class="fas fa-user"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="py-8 px-4 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto">
+            <h1 class="text-3xl font-bold text-slate-900 mb-2">Dynamic Grid & Content-Rich</h1>
+            <p class="text-slate-600">Discover curated insights from the world's leading thinkers</p>
+        </div>
+    </section>
+
+    <!-- Content Grid -->
+    <section class="py-8 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 auto-rows-[180px]">
+                
+                <!-- Article Card 1 -->
+                <div class="col-span-1 row-span-1 group cursor-pointer">
+                    <div class="h-full bg-amber-50 rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between border border-slate-200">
+                        <div>
+                            <h3 class="font-bold text-lg mb-2 text-slate-900 group-hover:text-amber-600 transition-colors">
+                                The Art of Non-Fiction
+                            </h3>
+                            <p class="text-slate-600 text-sm">Explore masterful storytelling techniques</p>
+                        </div>
+                        <span class="inline-block bg-slate-900 text-white text-xs px-3 py-1 rounded-full self-start mt-2">
+                            Bookreview.io
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Book Card 1 -->
+                <div class="col-span-1 row-span-1 group cursor-pointer">
+                    <div class="h-full bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden border border-slate-200 relative">
+                        <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400&q=80" alt="Twelve Pillars" class="w-full h-3/4 object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        <div class="p-3">
+                            <h4 class="font-semibold text-sm text-slate-900 truncate">Twelve Pillars</h4>
+                            <p class="text-xs text-slate-600 truncate">Jim Rohn</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article Card 2 -->
+                <div class="col-span-1 row-span-2 group cursor-pointer">
+                    <div class="h-full bg-slate-50 rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between border border-slate-200">
+                        <div>
+                            <h3 class="font-bold text-lg mb-2 text-slate-900 group-hover:text-amber-600 transition-colors">
+                                Leading with Emotional Intelligence
+                            </h3>
+                            <p class="text-slate-600 text-sm">Transformative leadership starts with understanding emotions</p>
+                        </div>
+                        <span class="inline-block bg-slate-900 text-white text-xs px-3 py-1 rounded-full self-start mt-2">
+                            Bookreview.io
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Article Card 3 -->
+                <div class="col-span-1 row-span-1 group cursor-pointer">
+                    <div class="h-full bg-slate-50 rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between border border-slate-200">
+                        <div>
+                            <h3 class="font-bold text-lg mb-2 text-slate-900 group-hover:text-amber-600 transition-colors">
+                                Flewsinley Classic
+                            </h3>
+                            <p class="text-slate-600 text-sm">Timeless wisdom for modern leaders</p>
+                        </div>
+                        <span class="inline-block bg-slate-900 text-white text-xs px-3 py-1 rounded-full self-start mt-2">
+                            Bookreview.io
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Book Card 2 -->
+                <div class="col-span-1 row-span-1 group cursor-pointer">
+                    <div class="h-full bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden border border-slate-200">
+                        <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?w=400&q=80" alt="Freedom Creating" class="w-full h-3/4 object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        <div class="p-3">
+                            <h4 class="font-semibold text-sm text-slate-900 truncate">Freedom Creating</h4>
+                            <p class="text-xs text-slate-600 truncate">Various Authors</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature Card 1 -->
+                <div class="col-span-2 row-span-2 group cursor-pointer">
+                    <div class="h-full rounded-xl shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden relative" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url(https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=600&q=80); background-size: cover; background-position: center;">
+                        <div class="h-full p-6 flex flex-col justify-end text-white">
+                            <h3 class="font-bold text-xl mb-2 group-hover:text-amber-400 transition-colors">
+                                Mastering Deep Work
+                            </h3>
+                            <p class="text-sm text-slate-200 mb-3">Essential strategies for focused productivity</p>
+                            <span class="inline-block bg-white text-slate-900 text-xs px-3 py-1 rounded-full self-start">
+                                Essentials
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature Card 2 -->
+                <div class="col-span-1 row-span-2 group cursor-pointer">
+                    <div class="h-full rounded-xl shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden relative" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url(https://images.unsplash.com/photo-1589829085413-56de8ae18c73?w=600&q=80); background-size: cover; background-position: center;">
+                        <div class="h-full p-6 flex flex-col justify-end text-white">
+                            <h3 class="font-bold text-xl mb-2 group-hover:text-amber-400 transition-colors">
+                                Unpacking Dune
+                            </h3>
+                            <p class="text-sm text-slate-200 mb-3">Leadership lessons from science fiction</p>
+                            <span class="inline-block bg-white text-slate-900 text-xs px-3 py-1 rounded-full self-start">
+                                Essentials
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature Card 3 -->
+                <div class="col-span-1 row-span-2 group cursor-pointer">
+                    <div class="h-full rounded-xl shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden relative" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url(https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=600&q=80); background-size: cover; background-position: center;">
+                        <div class="h-full p-6 flex flex-col justify-end text-white">
+                            <h3 class="font-bold text-xl mb-2 group-hover:text-amber-400 transition-colors">
+                                Strategic Planning
+                            </h3>
+                            <p class="text-sm text-slate-200 mb-3">Building your roadmap to success</p>
+                            <span class="inline-block bg-white text-slate-900 text-xs px-3 py-1 rounded-full self-start">
+                                Essentials
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book Card 3 -->
+                <div class="col-span-2 row-span-2 group cursor-pointer">
+                    <div class="h-full bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden border border-slate-200">
+                        <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=400&q=80" alt="Macbeth" class="w-full h-4/5 object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        <div class="p-4">
+                            <h4 class="font-semibold text-base text-slate-900">Macbeth</h4>
+                            <p class="text-sm text-slate-600">Shakespeare</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article Card 4 -->
+                <div class="col-span-1 row-span-2 group cursor-pointer">
+                    <div class="h-full bg-amber-50 rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between border border-slate-200">
+                        <div>
+                            <h3 class="font-bold text-lg mb-2 text-slate-900 group-hover:text-amber-600 transition-colors">
+                                Habits for Success
+                            </h3>
+                            <p class="text-slate-600 text-sm">Building routines that transform your life</p>
+                        </div>
+                        <span class="inline-block bg-slate-900 text-white text-xs px-3 py-1 rounded-full self-start mt-2">
+                            Bookreview.io
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Book Card 4 -->
+                <div class="col-span-1 row-span-1 group cursor-pointer">
+                    <div class="h-full bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden border border-slate-200">
+                        <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=400&q=80" alt="Journey of Inclusion" class="w-full h-3/4 object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        <div class="p-3">
+                            <h4 class="font-semibold text-sm text-slate-900 truncate">A Journey</h4>
+                            <p class="text-xs text-slate-600 truncate">Various Authors</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature Card 4 -->
+                <div class="col-span-1 row-span-2 group cursor-pointer">
+                    <div class="h-full bg-slate-100 rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between border border-slate-200">
+                        <div>
+                            <h3 class="font-bold text-lg mb-2 text-slate-900 group-hover:text-amber-600 transition-colors">
+                                Unpacking Ideas
+                            </h3>
+                            <p class="text-slate-600 text-sm">Breaking down complex concepts</p>
+                        </div>
+                        <span class="inline-block bg-slate-900 text-white text-xs px-3 py-1 rounded-full self-start mt-2">
+                            Essentials
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Book Card 5 -->
+                <div class="col-span-1 row-span-1 group cursor-pointer">
+                    <div class="h-full bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden border border-slate-200">
+                        <img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?w=400&q=80" alt="Espitork" class="w-full h-3/4 object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        <div class="p-3">
+                            <h4 class="font-semibold text-sm text-slate-900 truncate">Espitork</h4>
+                            <p class="text-xs text-slate-600 truncate">W. Shakespeare</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article Card 5 -->
+                <div class="col-span-1 row-span-2 group cursor-pointer">
+                    <div class="h-full bg-slate-50 rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between border border-slate-200">
+                        <div>
+                            <h3 class="font-bold text-lg mb-2 text-slate-900 group-hover:text-amber-600 transition-colors">
+                                Philosophy Today
+                            </h3>
+                            <p class="text-slate-600 text-sm">Modern perspectives on ancient wisdom</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book Card 6 -->
+                <div class="col-span-1 row-span-1 group cursor-pointer">
+                    <div class="h-full bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden border border-slate-200">
+                        <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?w=400&q=80" alt="Four Corners" class="w-full h-3/4 object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        <div class="p-3">
+                            <h4 class="font-semibold text-sm text-slate-900 truncate">Four Corners</h4>
+                            <p class="text-xs text-slate-600 truncate">Leadership Experts</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article Card 6 -->
+                <div class="col-span-1 row-span-2 group cursor-pointer">
+                    <div class="h-full bg-amber-50 rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between border border-slate-200">
+                        <div>
+                            <h3 class="font-bold text-lg mb-2 text-slate-900 group-hover:text-amber-600 transition-colors">
+                                Productivity Hacks
+                            </h3>
+                            <p class="text-slate-600 text-sm">Science-backed methods for peak performance</p>
+                        </div>
+                        <span class="inline-block bg-slate-900 text-white text-xs px-3 py-1 rounded-full self-start mt-2">
+                            Bookreview.io
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Book Card 7 -->
+                <div class="col-span-1 row-span-1 group cursor-pointer">
+                    <div class="h-full bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden border border-slate-200">
+                        <img src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e?w=400&q=80" alt="Red Leadership" class="w-full h-3/4 object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        <div class="p-3">
+                            <h4 class="font-semibold text-sm text-slate-900 truncate">Red Leadership</h4>
+                            <p class="text-xs text-slate-600 truncate">Modern Thinkers</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article Card 7 -->
+                <div class="col-span-1 row-span-2 group cursor-pointer">
+                    <div class="h-full bg-slate-50 rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between border border-slate-200">
+                        <div>
+                            <h3 class="font-bold text-lg mb-2 text-slate-900 group-hover:text-amber-600 transition-colors">
+                                Decoding Classic Literature
+                            </h3>
+                            <p class="text-slate-600 text-sm">Understanding timeless masterpieces</p>
+                        </div>
+                        <span class="inline-block bg-slate-900 text-white text-xs px-3 py-1 rounded-full self-start mt-2">
+                            Essentials
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Action Button -->
+    <button class="fixed bottom-8 right-8 w-16 h-16 bg-gradient-to-br from-slate-800 to-slate-900 text-white rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-110 flex items-center justify-center z-50">
+        <div class="relative">
+            <i class="fas fa-book-open text-2xl"></i>
+            <span class="absolute -top-1 -right-1 w-3 h-3 bg-amber-500 rounded-full animate-pulse"></span>
+        </div>
+    </button>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-12 px-4 mt-16">
+        <div class="max-w-7xl mx-auto text-center">
+            <div class="mb-6">
+                <div class="text-2xl font-bold mb-2">BookHub<span class="text-emerald-400">Blog</span></div>
+                <p class="text-slate-400 text-sm">Empowering leaders through knowledge</p>
+            </div>
+            <div class="flex justify-center space-x-8 text-sm text-slate-400 mb-6">
+                <a href="#" class="hover:text-amber-400 transition-colors">About</a>
+                <a href="contact.html" class="hover:text-amber-400 transition-colors">Contact</a>
+                <a href="#" class="hover:text-amber-400 transition-colors">Privacy</a>
+                <a href="#" class="hover:text-amber-400 transition-colors">Terms</a>
+            </div>
+            <p class="text-xs text-slate-500">&copy; 2024 BookHub Blog. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
