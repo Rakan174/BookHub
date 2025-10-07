@@ -1,0 +1,21 @@
+# The backend specifies how to connect to your GitHub repository.
+backend:
+  name: git-gateway
+  branch: main # The branch to publish to
+
+# The media_folder is where images uploaded in the CMS will be stored.
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+# Collections are the different types of content you can create.
+# Let's create one for your "Subjects" or blog posts.
+collections:
+  - name: "subjects" # Used in routes, e.g., /admin/collections/subjects
+    label: "Subjects" # Used in the UI
+    folder: "_subjects" # The folder where the documents will be stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template
+    fields: # The fields for each document, like the post's title and body
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Body", name: "body", widget: "markdown"}
